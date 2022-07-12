@@ -5,4 +5,6 @@
 
     <solid android:color="#2FA1A1A1"/>
 
+    <stroke android:width="0.5dp" android:color="@color/teal_700"/>
+
 </shape>
