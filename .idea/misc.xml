@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/UIKit/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/UIKit/app/src/main/res/drawable/simplebg.xml" value="0.21302083333333333" />
+        <entry key="..\:/UIKit/app/src/main/res/layout/activity_home.xml" value="0.1" />
+        <entry key="..\:/UIKit/app/src/main/res/layout/activity_login.xml" value="0.16" />
         <entry key="..\:/UIKit/app/src/main/res/layout/activity_main.xml" value="0.2" />
       </map>
     </option>

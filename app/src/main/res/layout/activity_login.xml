@@ -1,9 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/loginSplash"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/splash" />
+
+
+            <TextView
+                android:id="@+id/signIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/loginSplash"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Sign In"
+                android:textColor="@color/teal_700"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/edittext_Email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/signIn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/simplebg"
+                android:hint="app@gmail.com"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="20dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <EditText
+                android:id="@+id/edittext_Password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/edittext_Email"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/simplebg"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+                <CheckBox
+                    android:id="@+id/checkBox2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_below="@id/edittext_Password"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Remember" />
+
+            <Button
+                android:id="@+id/submitBtn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:onClick="btnPressed"
+                android:layout_below="@id/checkBox2"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/simplebg"
+                android:backgroundTint="@color/purple_500"
+                android:text="Sign In"
+                android:textAllCaps="false"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/submitBtn"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="50dp"
+                android:gravity="center"
+                android:text="Forgot Password ?"
+                android:textAllCaps="false"
+                android:textColor="@color/teal_700"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
